@@ -1,3 +1,8 @@
 .cardImg {
   height: 300px;
+  width: 400px;
+  transition: transform 0.3s ease; /* Плавний перехід */
+}
+.cardImg:hover {
+  transform: scale(1.05); /* Збільшення на 10% */
 }

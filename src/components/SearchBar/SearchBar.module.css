@@ -15,8 +15,11 @@
   height: 35px;
   padding: 8px;
   background-color: #fff;
-  border: 2px solid black;
-  border-radius: 100px;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+.form:active {
+  border: 1px solid blue;
 }
 
 .input {
@@ -28,10 +31,14 @@
   border: none;
   outline: none;
 }
+
 .btn {
   border: none;
   cursor: pointer;
   background-color: #fff;
   display: grid;
   place-items: center;
+}
+.searchIcon {
+  border: none;
 }
