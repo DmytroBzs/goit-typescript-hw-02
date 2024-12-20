@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
-import ImageModal from '../ImageModal/ImageModal.jsx';
-import ErrorMessage from '../ErrorMessage/ErrorMessage.jsx';
-import LoadMoreBtn from '../LoadMoreBtn/LoadMoreBtn.jsx';
-import Loader from '../Loader/Loader.jsx';
-import SearchBar from '../SearchBar/SearchBar.jsx';
-import ImageGallery from '../ImageGallery/ImageGallery.jsx';
-import { Image } from '../../types.js';
-import { fetchImg } from '../api.js';
+import ImageModal from '../ImageModal/ImageModal';
+import ErrorMessage from '../ErrorMessage/ErrorMessage';
+import LoadMoreBtn from '../LoadMoreBtn/LoadMoreBtn';
+import Loader from '../Loader/Loader';
+import SearchBar from '../SearchBar/SearchBar';
+import ImageGallery from '../ImageGallery/ImageGallery';
+import { Image } from '../../types';
+import { fetchImg } from '../api';
 import css from './App.module.css';
 
 export default function App() {
