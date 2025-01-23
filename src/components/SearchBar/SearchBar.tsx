@@ -9,11 +9,11 @@ interface SearchBarProps {
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const handleSubmit = (event: FormEvent<HTMLFormElement>): void => {
+    event.preventDefault();
     const form = event.target as HTMLFormElement;
     const inputValue = (
       form.elements.namedItem('searchInput') as HTMLInputElement
     ).value;
-    event.preventDefault();
     if (!inputValue.trim()) {
       toast.error('Please enter a search word!');
     } else {
